@@ -1,23 +1,37 @@
 {
   "name": "memegen-wrapper",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A TypeScript library for creating memes using the Memegen API",
+  "main": "dist/MemeGenApi.js",
+  "types": "dist/MemeGenApi.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "memegen",
+    "api",
+    "meme",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoeKyx/memeAPI.git"
+  },
+  "author": "Joe Hoffmann",
+  "license": "GPL-3.0",
   "dependencies": {
     "axios": "^1.6.8",
-    "typescript": "^5.4.5",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
     "prettier": "^3.2.5",
-    "ts-jest": "^29.1.2"
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
   }
 }
